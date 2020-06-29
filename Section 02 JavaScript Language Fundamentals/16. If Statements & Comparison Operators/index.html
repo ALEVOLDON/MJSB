@@ -5,6 +5,7 @@
 	<title>If Statements & Comparison Operators</title>
 </head>
 <body>
+	<h1>JavaScript Sandbox: Section 2</h1>
 	<script type="text/javascript">
 
 		// if(something) {
@@ -13,7 +14,7 @@
 		// 	do something else
 		// }
 
-		const id = "100";
+		const id = 100;
 
 		// // Equal to
 		// if(id == 100){
@@ -61,14 +62,50 @@
 
 		const color = "green";
 
-		if (color === "red"){
-			console.log("Color is red");
-		} else if (color === "blue") {
-			console.log("Color is blue");
+		// if (color === "red"){
+		// 	console.log("Color is red");
+		// } else if (color === "blue") {
+		// 	console.log("Color is blue");
+		// } else {
+		// 	console.log("Color is not red or blue");
+		// }
+
+		// --------------Logical Operators------------------
+
+		const name = "Steve";
+		const age = 20;
+
+		// AND - &&
+		if(age > 0 && age < 12){
+			// ребенок
+			console.log(`${name} is a child`);
+		} else if(age >= 13 && age <=19){
+			// тинейджер
+			console.log(`${name} is a teenager`);
 		} else {
-			console.log("Color is not red or blue");
+			// взрослый
+			console.log(`${name} is an adult`);
 		}
 
+		// OR - ||
+		if(age < 16 || age > 65){
+			// не может участвовать в гонке
+			console.log(`${name} can not run in race`);
+		} else {
+			// зарегистрирован на гонку
+			console.log(`${name} is registered for the race`);
+		}
+
+		// --------------------Ternary Operator-------------------------
+
+		console.log(id === 100 ? "Correct" : "Incorrect");
+
+		// --------------------Without Braces--------------------------
+
+		if(id === 100)
+			console.log("Correct");
+		else
+			console.log("Incorrect");
 	</script>
 </body>
 </html>
