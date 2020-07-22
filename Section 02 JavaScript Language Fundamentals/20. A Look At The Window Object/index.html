@@ -6,6 +6,7 @@
 </head>
 <body>
 	<h1>JavaScript Sandbox: Section 2</h1>
+	<!-- <div style="margin-top: 1000px"></div> -->
 	<script type="text/javascript">
 		// Window methods / Objects / Properties
 		// console.log("Hello");
@@ -18,9 +19,63 @@
 		// alert(input);
 
 		//Confirm
-		if(confirm("Are you sure")){
-			console.log("Yes");
-		}
+		// if(confirm("Are you sure")){
+		// 	console.log("Yes");
+		// } else {
+		// 	console.log("NO");
+		// }
+
+		let val;
+
+		// Outer height and width
+		val = window.outerHeight;
+		val = window.outerWidth;
+
+		// Inner height and width
+		val = window.innerHeight;
+		val = window.innerWidth;
+
+		// Scroll points
+		val = window.scrollY;
+		val = window.scrollX;
+
+		// Location Object
+		val = window.location;
+		val = window.location.hostname;
+		val = window.port;
+		val = window.href;
+		val = window.location.search;
+
+		// Redirect
+		// window.location.href = "http://google.com";
+
+		// Reload
+		// window.location.reload;
+
+		// History Object
+
+		// window.history.go();
+
+		// val = window.history.length;
+
+		// Navigator Object
+
+		// val = window.navigator;
+
+		// val = window.navigator.appName;
+
+		// val = window.navigator.appVersion;
+
+		// val = window.navigator.userAgent;
+
+		// val = window.navigator.platform;
+
+		// val = window.navigator.vendor;
+
+		val = window.navigator.language;
+
+		console.log(val);
+
 	</script>
 </body>
 </html>
